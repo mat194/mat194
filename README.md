@@ -5,7 +5,7 @@ I am currently a **PhD student in Applied Life and Health Sciences** (started Oc
 
 ---
 
-📄 **Curriculum Vitae**: [Download CV](cv.pdf)
+📄 **Curriculum Vitae**: [Download CV](CV.pdf)
 
 ---
 
