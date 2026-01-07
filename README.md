@@ -5,6 +5,10 @@ I am currently a **PhD student in Applied Life and Health Sciences** (started Oc
 
 ---
 
+📄 **Curriculum Vitae**: [Download CV](cv.pdf)
+
+---
+
 ### 🔬 Research Interests
 - Infectious disease epidemiology  
 - Antimicrobial resistance and stewardship  

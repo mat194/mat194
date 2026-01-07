@@ -1,0 +1,200 @@
+---
+title: "Matteo Morra's CV"
+author:
+  firstname: Matteo
+  lastname: Morra
+  address: "Piazzale Ludovico Antonio Scuro 10 - 37124 Verona (VR) - Italy"
+  position: PhD Student・MD・MSc・Infectious Disease
+  contacts:
+    - icon: fa envelope
+      text: matteo.morra@univr.it
+      url: "matteo.morra@univr.it"
+    - icon: fa brands orcid
+      text: ORCID
+      url: https://orcid.org/0000-0002-1684-0261
+    - icon: fa graduation-cap
+      text: Google Scholar
+      url: https://scholar.google.com/citations?hl=en&user=fnzO26wAAAAJ
+    - icon: fa book-open
+      text: Web of Science
+      url: https://www.webofscience.com/wos/author/record/AFY-6241-2022
+    - icon: fa brands github
+      text: GitHub
+      url: https://github.com/mat194
+    - icon: fa brands linkedin
+      text: LinkedIn
+      url: https://www.linkedin.com/in/matteo-morra-a4107a203/
+format: awesomecv-typst
+execute:
+  echo: false
+  warning: false
+  message: false
+profile-photo: "photo.jpg"
+brand:
+  typography: 
+    fonts:
+      - family: Roboto
+        source: google
+        weight: [100, 400, 700]
+      - family: Source Sans 3
+        source: google
+        weight: [100, 400, 700]
+        style: [normal, italic]
+    base: Source Sans 3
+  color:
+    primary: "#dc3522"
+    link: "#771822"
+  defaults: 
+    awesomecv-typst:
+      font-header: Roboto
+---
+
+```{r}
+library(typstcv)
+library(tidyverse)
+```
+
+``` {=typst} 
+#set par(justify: true)
+I am a Medical Doctor and Infectious Diseases specialist, currently a PhD student in Applied Life and Health Sciences. My research focuses on infectious disease epidemiology, antimicrobial stewardship, PK/PD of antibiotics and reproducible analytical methods.
+```
+
+## Education
+
+```{r}
+#| output: asis
+educ <- data.frame(
+  title = c(
+    "PhD in Applied Life and Health Sciences",
+    "Master in Principles and Practice of Systematic Reviews and Meta-Analysis",
+    "Specialization in Infectious Disease",
+    "II Level Master in Advanced Biostatistics for Clinical Research",
+    "Postgraduate Course in Systematic Reviews and Meta-Analyses",
+    "Medical Board Qualifying Exam",
+    "MD in Medicine and Surgery"
+  ),
+  location = c(
+    "University of Verona, Italy",
+    "University of Padua, Italy",
+    "University of Verona, Italy",
+    "University of Padua, Italy",
+    "University of Verona, Italy",
+    "University of Ferrara, Italy",
+    "University of Ferrara, Italy"
+  ),
+  date = c(
+    "Oct 2025 – present",
+    "Dec 2024 – Oct 2025",
+    "Jan 2021 - Feb 2025",
+    "Dec 2022 – Sep 2023",
+    "Apr 2022 – Jun 2022",
+    "Oct 2019 – Feb 2020",
+    "Sep 2013 – Oct 2019"
+  ),
+ description = c(
+    "Doctoral research focused on model-informed precision dosing of antibiotics, PK/PD integration, and reproducible analytical workflows.",
+    "Advanced training in systematic reviews and meta-analysis applied to biomedical and clinical research.",
+    "Postgraduate medical training in infectious diseases. Final thesis: \"Data-Driven Antimicrobial Stewardship: Integrating Susceptibility Reports with Local Guidelines\".",
+    "Advanced biostatistical methods for clinical research, including regression modeling, causal inference, and adaptive trial designs.",
+    "Evidence synthesis methods to support evidence-based guidelines in the health sector.",
+    "National medical board qualifying exam (score: 100%).",
+    "Medical degree with honors (110/110 cum laude). Thesis on PD-L1 expression in non–small cell lung cancer."
+  )
+) %>% 
+resume_entry()
+```
+
+## Work Experience
+
+```{r}
+#| output: asis
+work <- data.frame(
+  title = c(
+    "Clinical Researcher",
+    "Infectious Diseases Resident (Observership)",
+    "Infectious Diseases Resident",
+    "Infectious Diseases Resident (Observership)",
+    "Medical Doctor — GP Substitutions",
+    "Medical Doctor — USCA (COVID-19 Community Care)"
+  ),
+  location = c(
+    "Verona, Italy",
+    "Herston, Australia",
+    "Verona, Italy",
+    "Rome, Italy",
+    "Vicenza, Italy",
+    "Vicenza, Italy"
+  ),
+  date = c(
+    "Feb 2025 – present",
+    "May – Jun 2024",
+    "Jan 2021 – Feb 2025",
+    "Jun – Jul 2022",
+    "Mar – Dec 2020",
+    "Mar – Dec 2020"
+  ),
+  description = c(
+    "Clinical research in infectious diseases with a focus on epidemiological studies, data-driven antimicrobial stewardship, and reproducible analytical workflows.",
+    "Observership focused on population pharmacokinetics, model-informed precision dosing, and implementation of MIPD tools in clinical practice.",
+    "Postgraduate clinical training in infectious diseases, including inpatient care, consultation services, and participation in clinical research projects.",
+    "Short-term clinical training with emphasis on clinical microbiology, diagnostics, and management of infectious diseases.",
+    "Primary care clinical activity as general practitioner substitute, providing outpatient medical care.",
+    "Community-based medical care during the COVID-19 pandemic within the USCA network, supporting home-based patient management."
+  )
+) %>% 
+  resume_entry()
+```
+
+## Research Projects
+
+```{r}
+#| output: asis
+pub <- data.frame(
+  title = c(
+    "ORCHESTRA",
+    "WHO Ancillary COVID-19 Health Systems Project",
+    "VERDI (GA 101045989)",
+    "COMECT (GA 101136531)"
+  ),
+  location = c(
+    "European Union (Horizon 2020)",
+    "World Health Organization",
+    "European Union",
+    "European Union"
+  ),
+  date = c(
+    "2020 – 2023",
+    "2020 – 2022",
+    "2025",
+    "2025 – present"
+  ),
+  description = c(
+    "Contributor · European cohorts for SARS-CoV-2 research",
+    "eCRF development, data curation, and analysis",
+    "WP7 collaborator · Preparedness for future outbreaks",
+    "WP3 collaborator · Coordination of cohorts and trials"
+  )
+) %>% 
+  resume_entry()
+```
+
+## Skills
+
+```{r}
+#| output: asis
+skill <- data.frame(
+  title = c(
+    "Languages",
+    "Programming & Reporting",
+    "Statistical Methods",
+    "Clinical Research Tools"
+  ),
+  description = c(
+    "Italian (native), English (excellent), French (very good)",
+    "R , Quarto, Shiny, STATA",
+    "Regression models, propensity scores (PSM/IPTW), meta-analysis, adaptive and Bayesian designs",
+    "REDCap, Power BI, Excel, reproducible workflows"
+  )
+) %>% 
+  resume_entry()
+```
